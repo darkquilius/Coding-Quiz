@@ -1,0 +1,42 @@
+body {
+    background-image: url("https://previews.123rf.com/images/mejn/mejn1902/mejn190200132/125339129-question-mark-background-vector-mystery-backdrop-with-paper-cut-question-marks-symbols-.jpg");
+}
+
+.btn {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#start {
+    margin-top: 40px;
+}
+
+#questionDisplay {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+    font-size: 60px;
+}
+
+
+/* .glow {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: black;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+    }
+} */

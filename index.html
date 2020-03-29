@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 id="questionDisplay">Ready for a quiz? You only get 3 wrong answers!! Click start!!!</h2>
+    <div id="answerDisplay" class="container">
+        <div class="row row-col-6">
+            <button class="col btn btn-primary" id="A" style="display: none" value="A"></button>
+            <button class="col btn btn-primary" id="B" style="display: none" value="B"></button>
+        </div>
+        <div class="row row-col-6">
+            <button class="col btn btn-primary" id="C" style="display: none" value="C"></button>
+            <button class="col btn btn-primary" id="D" style="display: none" value="D"></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <button class="btn btn-success col" id="start">Start</button>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <button class="btn btn-success col" id="restart" style="display: none">Restart</button>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
