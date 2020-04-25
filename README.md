@@ -1,3 +1,5 @@
+Deployed Project: https://darkquilius.github.io/Coding-Quiz/
+
 # Coding-Quiz
 
 The challenge this week was to create a code that dynamically updates using javascript.
