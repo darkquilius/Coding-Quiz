@@ -125,7 +125,7 @@ function renderScore() {
     }
 };
 
-choiceA.addEventListener("click", function(event) {
+function choiceClicked(event) {
     var choiceValue;
     choiceValue = event.target.value;
     checkAnswer(choiceValue);
@@ -135,41 +135,13 @@ choiceA.addEventListener("click", function(event) {
         currentQuestion++;
         makeQuestion();
     } else { renderScore() }
-});
-choiceB.addEventListener("click", function(event) {
-    var choiceValue;
-    choiceValue = event.target.value;
-    checkAnswer(choiceValue);
-    if (wrongCount === 0) {
-        renderScore();
-    } else if (currentQuestion < lastQuestion) {
-        currentQuestion++;
-        makeQuestion();
-    } else { renderScore() }
-});
-choiceC.addEventListener("click", function(event) {
-    var choiceValue;
-    choiceValue = event.target.value;
-    checkAnswer(choiceValue);
-    if (wrongCount === 0) {
-        renderScore();
-    } else if (currentQuestion < lastQuestion) {
-        currentQuestion++;
-        makeQuestion();
-    } else { renderScore() }
-});
-choiceD.addEventListener("click", function(event) {
-    var choiceValue;
-    choiceValue = event.target.value;
-    checkAnswer(choiceValue);
-    if (wrongCount === 0) {
-        renderScore();
-    } else if (currentQuestion < lastQuestion) {
-        currentQuestion++;
-        makeQuestion();
-    } else { renderScore() }
-});
+}
 
+
+choiceA.addEventListener("click", choiceClicked) 
+choiceB.addEventListener("click", choiceClicked)
+choiceC.addEventListener("click", choiceClicked) 
+choiceD.addEventListener("click", choiceClicked) 
 restart.addEventListener("click", function() {
     restart.setAttribute("style", "display: none;");
     choiceA.removeAttribute("style");
@@ -181,7 +153,6 @@ restart.addEventListener("click", function() {
     score = 0;
     makeQuestion();
 });
-
 start.addEventListener("click", function() {
     start.setAttribute("style", "display: none;");
     choiceA.removeAttribute("style");
